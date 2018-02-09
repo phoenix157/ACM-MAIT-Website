@@ -4,6 +4,7 @@
 *AUTHOR: MEGHANSH GOEL
 
 */
+$(document).ready(function(){
 
 let canvas = document.querySelector('canvas');
 //sets canvas height to the window viewport
@@ -148,3 +149,4 @@ window.addEventListener("orientationchange", function(event){
 
 init();
 animate();
+});

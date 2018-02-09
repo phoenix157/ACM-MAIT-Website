@@ -1,4 +1,5 @@
 
+$(document).ready(function(){
 $('.arrow').on('click',function(){
     $('.container-fluid').fadeOut('slow');
     $('.hideIt').removeClass('hideIt');
@@ -8,3 +9,4 @@ $('.arrow').on('click',function(){
     
 });
             
+});

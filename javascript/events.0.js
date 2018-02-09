@@ -1,3 +1,4 @@
+$(document).ready(function(){
 // var wrapperMenu = document.querySelector('.wrapper-menu');
 
 // wrapperMenu.addEventListener('click', function(){
@@ -95,3 +96,4 @@
 
 // // $('.slidesjs-container').css('overflow-y','auto');
 var wrapperMenu=document.querySelector(".wrapper-menu");function setupTypewriter(e){var t=e.innerHTML;e.innerHTML="";var r=0,n="",i=!1,p=!1,a=0,u=function(){if(!0===i&&(n+=t[r]),"<"===t[r]&&(a=0,p?(p=!1,i=!0):(n="",p=!0,i=!0,n+=t[r])),!i&&p&&(n.innerHTML+=t[r]),i||p||(a=" "===t[r]?0:30*Math.random()+50,e.innerHTML+=t[r]),!0===i&&">"===t[r]&&(a=30*Math.random()+50,i=!1,p)){var o=document.createElement("span");e.appendChild(o),o.innerHTML=n,n=o.firstChild}(r+=1)<t.length-1&&setTimeout(u,a)};return{type:u}}function init(){var e=document.getElementById("typewriter");typewriter=setupTypewriter(e),typewriter.type();var t=document.getElementById("typewriter2");typewriter=setupTypewriter(t),typewriter.type()}wrapperMenu.addEventListener("click",function(){wrapperMenu.classList.toggle("open")}),init();var fade=document.querySelector(".arrow");fade.addEventListener("click",function(){$(".container-fluid, #typewriter, #typewriter2").fadeOut("slow"),setTimeout(function(){$(".container").fadeIn("slow")},500)});
+});

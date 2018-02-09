@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var winXArray = [],
     winYArray = [];
 
@@ -53,3 +54,4 @@ canvas.height = $(window).innerHeight();
 });
 
 $(window).resize();
+});
